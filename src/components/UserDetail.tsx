@@ -24,10 +24,15 @@ const Container = styled.section`
 const FilterContainer = styled.section`
   padding: 16px;
   background-color: hsl(235, 46%, 20%);
+  display: flex;
+  justify-content: center;
+  @media (min-width: 769px) {
+    flex-direction: column;
+  }
 `;
 
 const UserContainer = styled.section`
-  background-color: hsl(246, 80%, 60%);\
+  background-color: hsl(246, 80%, 60%);
   padding: 16px;
   border-radius: 15px;
 `;

@@ -9,9 +9,11 @@ import "./styles.css";
 const Container = styled.main`
   display: flex;
   flex-direction: column;
-  height: 540px;
-  flex-wrap: wrap;
-  width: 760px;
+  @media (min-width: 769px) {
+    flex-wrap: wrap;
+    height: 540px;
+    width: 760px;
+  }
 `;
 
 export default function App() {
